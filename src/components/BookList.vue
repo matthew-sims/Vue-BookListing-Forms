@@ -41,7 +41,7 @@ export default {
     BookItem,
     BookForm
   },
-  computer: {
+  computed: {
     filteredBooks() {
       return _.filter(this.books, ["ownership", this.holding]);
     }
