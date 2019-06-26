@@ -18,9 +18,9 @@
 </template>
 
 <script>
+import _ from "lodash";
 import BookItem from "./BookItem";
 import BookForm from "./BookForm";
-import _ from "lodash";
 
 export default {
   name: "BookList",
@@ -33,7 +33,7 @@ export default {
         { title: "American Gods", author: "Neil Gaiman", finishedReading: false, ownership: 'bought' },
         { title: "Amusing Ourselves to Death", author: "Neil Postman", finishedReading: true, ownership: 'borrowed' }
       ],
-      filters: ['bought, borrowed'],
+      filters: ['bought', 'borrowed'],
       holding: 'bought'
     };
   },
